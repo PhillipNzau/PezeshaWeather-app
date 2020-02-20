@@ -39,7 +39,7 @@
             <form id="app2" action="">
               <h6 class="error text-center" v-for="error in errors" :key="error">{{ error }}</h6><br>
               <section v-if="step == 1" class="container col-md-8 mb-6">
-                <h5 class="text-center">Step 1</h5>
+                <h5 class="text-center">Step 1/3</h5>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                       <input required v-model="form.fname" type="text" class="form-control" placeholder="First name">
@@ -57,7 +57,7 @@
               </section>
 
               <section v-if="step == 2" class="container col-md-8 mb-6">
-                <h5>Step 2</h5>
+                <h5>Step 2/3</h5>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                       <input required v-model="form.idnum" type="number" class="form-control" placeholder="National ID">
@@ -71,7 +71,7 @@
 
           </section>
               <section v-if="step == 3" class="container col-md-8 mb-6">
-                <h5>Step 3</h5>
+                <h5>Step 3/3</h5>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                       <input required v-model="form.cname" type="text" class="form-control" placeholder="Company name">
